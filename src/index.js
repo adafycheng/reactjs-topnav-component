@@ -19,7 +19,7 @@ export const TopNav = (props) => {
         // read the input JSON content
         if (props.links !== undefined) {
           console.log('props.links.items.length: ' + props.links.items.length)
-          $('#navLinksDiv').empty()
+          $('#navbarLinksDev').empty()
           for (let i = 0; i < props.links.items.length; i++) {
             const newDiv = $('<a href="' + props.links.items[i].href + '" target="_blank" rel="noopener noreferrer"><img src=' + props.links.items[i].src + ' class=' + styles.icon + ' alt="' + props.links.items[i].alt + '" /></a>&nbsp;')
             $('#navbarLinksDev').append(newDiv)
