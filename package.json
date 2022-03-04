@@ -1,6 +1,6 @@
 {
   "name": "reactjs-topnav-component",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Top Navigation bar component using react.js",
   "author": "adafycheng",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": ">16.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
