@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { TopNav, TopNavItem } from 'reactjs-topnav-component'
-import 'reactjs-topnav-component/dist/index.css'
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+import { TopNav, TopNavItem } from 'reactjs-topnav-component'
+import 'reactjs-topnav-component/dist/index.css'
 
 
 const linksData = {

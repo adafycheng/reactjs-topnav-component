@@ -1,26 +1,54 @@
-import { TabbedPaneComponent } from '.'
+import { TopNav, TopNavItem } from '.'
 import React from 'react'
 
-const contentData = {
-  contents: [
+const linksData = {
+  items: [
     {
-      subject: 'Overview',
-      text: 'This is content of Overview'
+      alt:  'GitHub',
+      src:  './images/github.png',
+      href: 'https://github.com/adafycheng'
     },
     {
-      subject: 'Assumptions',
-      text: '<ul><li>Assumption 1</li><li>Assumption 2</li><li>Assumption 3</li><li>Assumption 4</li></ul>'
+      alt:  'LinkedIn',
+      src:  './images/linkedin.png',
+      href: 'https://linkedin.com/in/adafycheng'
     },
     {
-      subject: 'Technical Design',
-      text: 'This is content of Technical Design'
+      alt:  'stackoverflow',
+      src:  './images/stackoverflow.png',
+      href: 'https://stackoverflow.com/story/adafycheng'
+    },
+    {
+      alt:  'Twitter',
+      src:  './images/twitter.png',
+      href: 'https://twitter.com/adafycheng'
+    },
+    {
+      alt:  'Google Developer',
+      src:  './images/gdev.png',
+      href: 'https://g.dev/adafycheng'
+    },
+    {
+      alt:  'CodePen',
+      src:  './images/codepen.png',
+      href: 'https://codepen.io/adafycheng'
+    },
+    {
+      alt:  'HashNode',
+      src:  './images/hashnode.png',
+      href: 'https://adafycheng.hashnode.dev'
+    },
+    {
+      alt:  'dev.to',
+      src:  './images/dev-black.png',
+      href: 'https://dev.to/adafycheng'
     }
   ]
 }
 
-describe('TabbedPaneComponent', () => {
+describe('TopNav', () => {
   it('is truthy', () => {
-    const pane = <TabbedPaneComponent data={contentData} />
-    expect(pane).toBeTruthy()
+    const nav = <TopNav navTitle="My Portfolio" links={linksData} />
+    expect(nav).toBeTruthy()
   })
 })

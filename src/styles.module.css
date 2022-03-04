@@ -4,3 +4,38 @@
     height: 30px;
     width: 30px;
 }
+
+.header {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-light .navbarBrand {
+    color: rgb(219, 33, 148);
+    font-weight: bold;
+}
+
+.navbarBrand,
+a.navbarBrand:hover {
+    color: rgb(219, 33, 148);
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.navLink {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a.navLink:hover,
+a.navLink:active {
+    color: rgba(219, 33, 148);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(219, 33, 148);
+}
