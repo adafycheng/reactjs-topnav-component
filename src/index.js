@@ -57,22 +57,11 @@ export const TopNav = (props) => {
 }
 
 export const TopNavItem = (props) => {
-
-  //handleClick = () => console.log('Hi there');
-
-  function handleClick(e) {
-    e.preventDefault()
-    console.log('You clicked submit!!!')
-    //this.addClass('active')
-    //console.log(this.className);
-    e.target.classList.add('active')
-  }
-
-  let itemClassName = styles.navLink
+  const itemClassName = styles.navLink
 
   return (
     <li className='nav-item'>
-      <a className={itemClassName} href={props.href} onClick={handleClick}>
+      <a className={itemClassName} href={props.href}>
         {props.children}
       </a>
     </li>
