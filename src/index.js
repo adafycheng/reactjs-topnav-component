@@ -8,7 +8,7 @@ export const TopNav = (props) => {
     // read the input JSON content
     if (props.links !== undefined) {
       console.log('props.links.items.length: ' + props.links.items.length)
-      $('#navbarLinksDev').empty()
+      $('#navbarLinksDiv').empty()
       for (let i = 0; i < props.links.items.length; i++) {
         const newDiv = $(
           '<a href="' +
@@ -22,7 +22,7 @@ export const TopNav = (props) => {
             '" /></a>'
         )
 
-        $('#navbarLinksDev').append(newDiv).append('&nbsp;')
+        $('#navbarLinksDiv').append(newDiv).append('&nbsp;')
       }
     }
   })
@@ -49,7 +49,7 @@ export const TopNav = (props) => {
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>{props.children}</ul>
-          <div id='navbarLinksDev' />
+          <div id='navbarLinksDiv' />
         </div>
       </div>
     </Nav>
@@ -57,9 +57,22 @@ export const TopNav = (props) => {
 }
 
 export const TopNavItem = (props) => {
+
+  //handleClick = () => console.log('Hi there');
+
+  function handleClick(e) {
+    e.preventDefault()
+    console.log('You clicked submit!!!')
+    //this.addClass('active')
+    //console.log(this.className);
+    e.target.classList.add('active')
+  }
+
+  let itemClassName = styles.navLink
+
   return (
     <li className='nav-item'>
-      <a className={styles.navLink} href={props.href}>
+      <a className={itemClassName} href={props.href} onClick={handleClick}>
         {props.children}
       </a>
     </li>
