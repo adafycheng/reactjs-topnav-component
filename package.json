@@ -1,6 +1,6 @@
 {
   "name": "reactjs-topnav-component",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A Top Navigation bar component using react.js",
   "author": "adafycheng",
   "license": "MIT",
@@ -53,7 +53,7 @@
   ],
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "jquery": "^3.6.1",
+    "jquery": "^3.6.2",
     "react-bootstrap": "^2.6.0"
   }
 }
