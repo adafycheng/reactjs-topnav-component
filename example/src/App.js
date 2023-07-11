@@ -15,6 +15,11 @@ const linksData = {
       href: 'https://github.com/adafycheng'
     },
     {
+      alt:  'GitLab',
+      src:  './images/gitlab.png',
+      href: 'https://gitlab.com/adafycheng'
+    },
+    {
       alt:  'LinkedIn',
       src:  './images/linkedin.png',
       href: 'https://linkedin.com/in/adafycheng'
@@ -48,6 +53,11 @@ const linksData = {
       alt:  'dev.to',
       src:  './images/dev-black.png',
       href: 'https://dev.to/adafycheng'
+    },
+    {
+      alt:  'Blogspot',
+      src:  '/images/blogspot.jpg',
+      href: 'https://adafycheng-uk-life.blogspot.com'
     }
   ]
 }
