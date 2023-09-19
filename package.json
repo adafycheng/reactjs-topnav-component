@@ -53,7 +53,7 @@
   ],
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "jquery": "^3.6.2",
+    "jquery": "^3.7.1",
     "react-bootstrap": "^2.6.0"
   }
 }
