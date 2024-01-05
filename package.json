@@ -52,7 +52,7 @@
     "images"
   ],
   "dependencies": {
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.2",
     "jquery": "^3.6.2",
     "react-bootstrap": "^2.6.0"
   }
